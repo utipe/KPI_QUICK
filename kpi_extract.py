@@ -15,8 +15,8 @@ starting_date = st.date_input('Starting date', value=dt.now() - timedelta(days=1
 starting_time = st.time_input('Starting time', value=dt.now() - timedelta(hours=1))
 starting_dt = f'{starting_date} {starting_time}'
 
-ending_date = st.date_input('Ending date', value=dt.now() - timedelta(days=1))
-ending_time = st.time_input('Ending time', value=dt.now() - timedelta(hours=1))
+ending_date = st.date_input('Ending date', value=dt.now())
+ending_time = st.time_input('Ending time', value=dt.now())
 ending_dt = f'{ending_date} {ending_time}'
 
 def get_delivery_time(starting_time, ending_time):
